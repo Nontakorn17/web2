@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Freelance Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --dark-color: #1e293b;
+            --light-bg: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        p.subtitle { font-size: 1.2rem; opacity: 0.9; }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background: #e2e8f0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
+        <h1>[ชื่อ-นามสกุล ของคุณ]</h1>
+        <p class="subtitle">[ตำแหน่งงาน เช่น Graphic Designer / Web Developer]</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>สวัสดีครับ! ผมเป็นฟรีแลนซ์ที่มีประสบการณ์ด้าน [ระบุสิ่งที่ทำ] มากว่า [จำนวนปี] ปี มุ่งเน้นการทำงานที่มีคุณภาพ ตรงต่อเวลา และตอบโจทย์ความต้องการของลูกค้าเป็นหลัก</p>
+        </div>
+
+        <div class="section">
+            <h2>ทักษะและความเชี่ยวชาญ</h2>
+            <div class="skills">
+                <span class="skill-badge">Skill 1</span>
+                <span class="skill-badge">Skill 2</span>
+                <span class="skill-badge">Skill 3</span>
+                <span class="skill-badge">Skill 4</span>
+                <span class="skill-badge">Skill 5</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>ผลงานที่ผ่านมา</h2>
+            <ul>
+                <li><strong>โปรเจกต์ A:</strong> รายละเอียดสั้นๆ เกี่ยวกับสิ่งที่คุณทำ</li>
+                <li><strong>โปรเจกต์ B:</strong> ผลลัพธ์ที่ได้จากการทำงาน</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>สนใจจ้างงานติดต่อ</h2>
+            <p>📧 อีเมล: yourname@email.com</p>
+            <p>📱 เบอร์โทร: 08X-XXX-XXXX</p>
+            <p>💬 Line ID: your-id</p>
+            
+            <a href="mailto:yourname@email.com" class="contact-btn">ส่งอีเมลหาผมตอนนี้</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2024 [ชื่อของคุณ]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
